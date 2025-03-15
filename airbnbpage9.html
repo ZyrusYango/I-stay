@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details | I-Stay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        /* Back Button Styling */
+        .back-button {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+        .property-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .property-img:hover {
+            transform: scale(1.05);
+        }
+        /* Updated carousel styling */
+        #propertyCarousel {
+            max-width: 600px;
+            margin: auto;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .carousel-item img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Back Button -->
+    <button class="back-button" onclick="history.back()">← Back</button>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="airbnbPasay2.jpg" alt="Airbnb Pasay 2" class="property-img">
+            </div>
+            <div class="col-md-6">
+                <h2>Pasay, Philippines</h2>
+                <h4 class="text-primary">₱2,500/night</h4>
+                <p><strong>Location:</strong> Pasay, Philippines</p>
+                <p><strong>Description:</strong> A modern and stylish space ideal for travelers and professionals. Close to entertainment hubs, shopping centers, and transport links.</p>
+                <h5>Amenities:</h5>
+                <ul>
+                    <li>High-Speed Wi-Fi</li>
+                    <li>Fully Furnished Unit</li>
+                    <li>24/7 Security</li>
+                    <li>Easy Access to Malls and Airports</li>
+                    <li>Cozy Living Space</li>
+                </ul>
+                <a href="Contact.html" class="btn btn-primary">Inquire Now</a>
+            </div>
+        </div>
+        
+        <h3 class="mt-5 text-center">Other Properties You May Like</h3>
+        <div id="propertyCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="airbnbMakati.jpg" class="d-block w-100" alt="Makati, Poblacion">
+                </div>
+                <div class="carousel-item">
+                    <img src="airbnbPasay.jpg" class="d-block w-100" alt="Pasay, Bay City">
+                </div>
+                <div class="carousel-item">
+                    <img src="airbnbBgc.jpg" class="d-block w-100" alt="BGC, High Street">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#propertyCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#propertyCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

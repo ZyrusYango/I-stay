@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - I-Stay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        .navbar-brand img {
+            height: 110px;
+            width: auto;
+            margin-right: 10px;
+        }
+        .navbar-nav .nav-link {
+            transition: color 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #007bff;
+        }
+        .about-section {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+        .about-content {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="Mainpage.html"><img src="I-Stay.png" alt="Logo"> I-Stay</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Mainpage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="AboutUs.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content" data-aos="fade-up">
+                <h2 data-aos="zoom-in">About I-Stay</h2>
+                <p data-aos="fade-up" data-aos-delay="100">I-Stay is dedicated to providing cozy and stylish accommodations in the Philippines. Our goal is to offer comfortable stays that make you feel at home, whether you're on vacation, a business trip, or simply exploring a new city.</p>
+                <p data-aos="fade-up" data-aos-delay="200">We focus on quality, affordability, and convenience, ensuring our guests have the best experience. Our handpicked properties in key locations such as BGC, Makati, and Pasay are designed to offer a perfect balance of comfort and accessibility.</p>
+                <p data-aos="fade-up" data-aos-delay="300">At I-Stay, we understand that every traveler has unique needs. That’s why we offer a wide range of accommodations, from modern apartments to luxurious suites, all equipped with essential amenities for a seamless stay.</p>
+                <p data-aos="fade-up" data-aos-delay="400">Our commitment to exceptional hospitality goes beyond just providing a place to stay. We prioritize customer satisfaction by maintaining high cleanliness standards, offering easy booking processes, and ensuring responsive customer support.</p>
+                <p data-aos="fade-up" data-aos-delay="500">Experience the best of the Philippines with I-Stay. Let us be your home away from home, where relaxation, style, and convenience come together for an unforgettable stay.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<div class="footer" data-aos="fade-in">
+    <div class="container">
+        <p>© 2025 I-Stay. All Rights Reserved.</p>
+        <p>Contact us: +63 912 345 6789</p>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, 
+            easing: "ease-in-out",
+            once: true 
+        });
+    </script>
+    
+</body>
+</html>
